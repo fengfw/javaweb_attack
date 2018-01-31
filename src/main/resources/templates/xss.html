@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>xss攻击</title>
+    <meta charset="utf-8"/>
+</head>
+<link href="../static/testcss.css" rel="stylesheet"/>
+<body>
+<label>留言:</label>
+<label for="input"></label><input id="input" type="text" name="content" value=""/><br/>
+<input type="submit" value="提交" onclick="record()"/>
+<script language="javascript" type="text/javascript">
+    var input;
+    function record(){
+        <!--result=document.getElementById("result").innerHTML-->
+        input=document.getElementById("input").value;
+        document.getElementById("result").innerHTML=input;
+    }
+</script>
+<!--</form>-->
+<br/>留言记录：<br/>
+<div id="result"></div>
+</body>
+</html>

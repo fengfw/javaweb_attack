@@ -14,6 +14,7 @@ public class MyController {
         return "xss";
     }
 
+    //针对javaweb_land在浏览器登录后进行如下操作
     @RequestMapping(value = "/csrf")
     public String indexCSRF(Model model) {
         //获取6位随机字符串

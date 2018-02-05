@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.csrf</groupId>
-	<artifactId>demo1</artifactId>
+	<artifactId>attackDemo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>demo1</name>
+	<name>attackDemo</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
